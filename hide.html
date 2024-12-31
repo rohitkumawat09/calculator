@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Paragraph</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="hide.css">
+    <style>
+        .toggle-box {
+            background-color: #ff4d4d;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        #paragraph {
+            display: none;
+            margin-top: 20px;
+            color: #333;
+            text-align: center;
+        }
+    </style>
+  
+</head>
+
+<body>
+
+
+     <div class="conatiner">
+        <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa eos perferendis commodi deserunt, quis ducimus.</p>
+    
+
+        <button id="hide">hide</button>
+        <button id="show">show</button>
+
+    </div>
+    
+
+
+
+    <div id="name">
+     <h1>Lorem ipsum dolor sit amet.</h1>
+
+<div id="one" >
+    <span><i class="fa-solid fa-arrow-turn-down" ></i></span>
+</div>
+    </div>
+
+    <div id="hello">
+       <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eaque voluptates incidunt? Aspernatur, voluptatem excepturi. Beatae, voluptates. Molestiae esse nostrum corrupti facilis laudantium ipsam voluptas odit? Fugiat quod minus veritatis.</p>
+    </div>
+ 
+    <script>
+        
+
+let butmain=document.getElementById("one")
+
+let buthello=document.getElementById("hello")
+
+butmain.addEventListener("click", () => {
+
+    buthello.style="display:block"   
+});
+
+butmain.addEventListener("dblclick", () => {
+
+buthello.style="display:none"   
+}); 
+    
+
+
+//  function not()
+//  {
+//     let butmain=document.getElementById("hello")
+//     butmain.style="display:block;"
+    
+//  }
+// function next()
+// {
+//     let butmain=document.getElementById("hello")
+//     butmain.style="display:none;"
+
+// }
+
+
+
+    </script>
+
+
+
+<script>
+        
+    const para = document.querySelector('.para');
+
+    hide.addEventListener("click", () =>
+{
+    para.innerHTML="";
+} )
+
+show.addEventListener("click", () =>
+{
+    para.innerHTML="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa eos perferendis commodi deserunt, quis ducimus.";
+} )
+
+
+
+</script>
+</body>
+
+</html>

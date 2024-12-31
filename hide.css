@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#name{background-color: red;
+display: flex;
+align-items: center;
+justify-content: space-between;
+text-align: center;
+color: wheat;
+padding: 30px;
+}
+
+#one{
+    font-size: 40px;
+}
+
+
+#hello{
+    background-color: blueviolet;
+    padding: 20px;
+    font-size: 20px;
+    display: none;
+}
